@@ -1,12 +1,12 @@
-// import React from 'react';
-// import SpaceInvaders from '../games/spaceinvaders/components/spaceinvaders'
+ import React from 'react';
+ import SpaceInvaders from '../games/spaceinvaders/components/spaceinvaders'
 
-// const SpaceInvadersPage = () => {
-//     return (
-//         <div>
-//             <SpaceInvaders />
-//         </div>
-//     )
-// }
+ const SpaceInvadersPage = () => {
+     return (
+         <div>
+             <SpaceInvaders />
+         </div>
+     )
+}
 
-// export default SpaceInvadersPage
+ export default SpaceInvadersPage

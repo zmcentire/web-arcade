@@ -58,6 +58,22 @@ class SnakeGame extends React.Component{
 
         function draw(){
 
+            // Background
+            ctx.fillStyle = "#567d46";
+            ctx.fillRect(0, 0, 608, 608);
+
+            // Draw Snake
+            for(let i = 0; i < snake.length; i++){
+                ctx.fillStyle = (i == 0)? "#00ff00" : "#00cc00";
+                ctx.fillRect(snake[i].x, snake[i].y, box, box);
+                ctx.strokeStyle = "#008800";
+                ctx.strokeRect(snake[i].x, snake[i].y, box, box)
+            }
+
+            //Draw Food
+            ctx.fillStyle = "#ff0000";
+            ctx.fillRect(food.x, food.y, box, box)
+
             ground.onload = () => {
                 ctx.drawImage(ground,0,0);
             }
@@ -85,7 +101,7 @@ class SnakeGame extends React.Component{
             if(d == "DOWN") snakeY += box;
 
             // if the snake eats the food
-            if(snakeX == food.x && snake.Y == food.y){
+            if(snakeX == food.x && snakeY == food.y){
                 score++;
                 food = {
                     x : Math.floor(Math.random()*17+1) * box,

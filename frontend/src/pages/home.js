@@ -11,7 +11,9 @@ const Home = () => {
                     <MDBCardImage classname = "img-fluid" src="https://psmag.com/.image/t_share/MTI3NTgyMjIwOTYwNjM1MzU4/flappy-bird.jpg" waves />
                     <MDBCardBody>
                         <MDBCardTitle>FlappyBird</MDBCardTitle>
-                        <MDBBtn href = 'http://127.0.0.1:5502/frontend/src/games/flappybird/Original-Flappy-bird-JavaScript/index.html'>Play</MDBBtn>
+                        <Link to="/flappybird">
+                            <MDBBtn>Play</MDBBtn>
+                        </Link>
                     </MDBCardBody>
                 </MDBCard>
                 <MDBCard style = {{ width: "22rem"}}>
@@ -24,7 +26,9 @@ const Home = () => {
                 <MDBCard style = {{width: "22rem"}}>
                     <MDBCardImage className = "img-fluid" src="https://cdn1us.denofgeek.com/sites/denofgeekus/files/2018/08/space-invaders.png" waves />
                     <MDBCardTitle>Space Invaders</MDBCardTitle>
-                    <MDBBtn href = 'http://127.0.0.1:5502/frontend/src/games/spaceinvaders/spaceinvaders/index.html'>Play</MDBBtn>
+                    <Link to="/spaceinvaders">
+                        <MDBBtn>Play</MDBBtn>
+                    </Link>
                 </MDBCard>
             </CardDeck>
         </div>
